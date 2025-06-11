@@ -1,0 +1,914 @@
+:root {
+    --primary: #1363C6;
+    --secondary: #15ACE1;
+    --light: #F4F7FE;
+    --dark: #14183E;
+    --font_type: "PT Serif", serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.owner-container {
+    position: relative;
+    margin-top: 50px;
+}
+
+/*chairman*/
+/********* Contact CSS *********/
+/*******************************/
+
+.owner-title {
+    color: #000000;
+    font-size: 47px;
+    font-weight: 700;
+    font-family: var(--font_type);
+}
+
+.owner-desc {
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: var(--font_type);
+
+}
+
+
+.custom-card {
+    border: 5px solid pink;
+    background-color: #010659;
+    text-align: left;
+
+}
+
+.custom-card .card-title {
+    font-weight: 700;
+    font-family: var(--font_type);
+    font-size: 30px;
+    color: #FFFFFF;
+    line-height: 99px;
+}
+
+.card-text {
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-family: var(--font_type);
+    line-height: 36px;
+    font-size: 24px;
+}
+
+
+
+.owner-image {
+    width: 550px;
+    position: relative;
+    z-index: 2;
+}
+
+.l-shape {
+    background: url('/img/chairman card.png') center center no-repeat;
+    background-size: cover;
+    color: white;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    right: -320px;
+    top: 34%;
+    z-index: 1;
+    padding: 20px;
+    padding-left: 383px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 10px;
+}
+
+.text-wrapper {
+    margin: auto;
+    text-align: left;
+    max-width: max-content;
+}
+
+.text-l-shep {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--font_type);
+    line-height: 56px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.text-l-description {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: var(--font_type);
+    color: #000000;
+    line-height: 56px;
+    width: 100% !important;
+
+}
+
+.text-container {
+    position: absolute;
+    left: 580px;
+    top: 20%;
+}
+
+.text-container .main-title {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 56px;
+    font-family: var(--font_type);
+    margin-bottom: 10px;
+    color: #010659;
+}
+
+@media (max-width: 1550px) and (min-width: 1400px) {
+    .owner-image {
+        width: 480px;
+    }
+
+    .text-container {
+        left: 520px;
+    }
+
+    .l-shape {
+        background: url('/img/chairman card.png') center center no-repeat;
+        background-size: cover;
+        color: white;
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        right: -320px;
+        top: 34%;
+        z-index: 1;
+        padding: 20px;
+        padding-left: 330px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    .text-wrapper {
+        margin-bottom: auto;
+        margin-left: 130px;
+        text-align: left;
+        max-width: max-content;
+    }
+
+    .text-l-shep {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: var(--font_type);
+        line-height: 56px;
+        color: #FFFFFF;
+        margin-top: 0;
+    }
+
+    .text-l-description {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: var(--font_type);
+        color: #000000;
+        line-height: 56px;
+        width: 85vw;
+
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1400px) {
+    .owner-image {
+        width: 480px;
+    }
+
+    .text-container {
+        left: 520px;
+    }
+
+    .l-shape {
+        background: url('/img/chairman card.png') center center no-repeat;
+        background-size: cover;
+        color: white;
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        right: -320px;
+        top: 34%;
+        z-index: 1;
+        padding: 20px;
+        padding-left: 330px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    .text-wrapper {
+        margin-bottom: auto;
+        margin-left: 130px;
+        text-align: left;
+        max-width: max-content;
+    }
+
+    .text-l-shep {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: var(--font_type);
+        line-height: 56px;
+        color: #FFFFFF;
+        margin-top: 0;
+    }
+
+    .text-l-description {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: var(--font_type);
+        color: #000000;
+        line-height: 56px;
+        width: 85vw;
+
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 1301px) {
+    .owner-image {
+        width: 424px;
+    }
+
+    .text-container {
+        left: 520px;
+    }
+
+    .l-shape {
+        background: url('/img/chairman card.png') center center no-repeat;
+        background-size: cover;
+        color: white;
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        right: -320px;
+        top: 30%;
+        z-index: 1;
+        padding: 20px;
+        padding-left: 330px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    .text-wrapper {
+        margin-bottom: auto;
+        margin-left: 80px;
+        text-align: left;
+        max-width: max-content;
+    }
+
+    .text-l-shep {
+        font-size: 22px;
+        font-weight: 600;
+        font-family: var(--font_type);
+        line-height: 56px;
+        color: #FFFFFF;
+        margin-top: 0;
+    }
+
+    .text-container {
+        position: absolute;
+        left: 464px;
+        top: 15%;
+    }
+
+    .text-l-description {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: var(--font_type);
+        color: #000000;
+        line-height: 56px;
+        width: 85vw;
+
+    }
+}
+
+
+
+@media (max-width: 1301px) and (min-width: 1200px) {
+    .owner-image {
+        width: 350px;
+    }
+
+    .text-container {
+        left: 460px;
+        top: 9%;
+    }
+
+    .l-shape {
+        top: 27%;
+        padding-left: 50px !important;
+    }
+
+    .text-l-shep {
+        line-height: 42px;
+    }
+
+    .text-container {
+        position: absolute;
+        left: 411px;
+        top: 9%;
+    }
+
+    .text-l-shep {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: var(--font_type);
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-top: auto;
+
+    }
+
+    .text-l-description {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: var(--font_type);
+        color: #000000;
+        line-height: 56px;
+        width: 85vw;
+
+    }
+}
+
+
+@media (max-width: 1199px) and (min-width: 1000px) {
+    .owner-image {
+        width: 310px;
+    }
+
+    .text-container {
+        left: 336px;
+        top: 9%;
+    }
+
+    .l-shape {
+        top: 27%;
+        padding-left: 33px;
+    }
+
+    .text-l-shep {
+        line-height: 42px;
+    }
+
+    .text-container {
+        position: absolute;
+        left: 338px;
+        top: 9%;
+    }
+
+    .text-l-shep {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: var(--font_type);
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-top: auto;
+
+    }
+
+    .text-container .main-title {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 56px;
+        font-family: var(--font_type);
+        margin-bottom: 10px;
+        color: #010659;
+    }
+
+    .text-l-description {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: var(--font_type);
+        color: #000000;
+        line-height: 56px;
+        width: 85vw;
+
+    }
+}
+
+@media (max-width: 1010px) and (min-width: 993px) {
+    .owner-image {
+        width: 310px;
+    }
+
+    .text-container {
+        left: 336px;
+        top: 9%;
+    }
+
+    .l-shape {
+        top: 27%;
+        padding-left: 33px;
+    }
+
+    .text-l-shep {
+        line-height: 42px;
+    }
+
+    .text-container {
+        position: absolute;
+        left: 329px;
+        top: 9%;
+    }
+
+    .text-l-shep {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: var(--font_type);
+        line-height: 35px;
+        color: #FFFFFF;
+        margin-top: auto;
+
+    }
+
+    .text-wrapper {
+        margin-bottom: auto;
+        margin-left: 250px;
+        text-align: left;
+        max-width: max-content;
+    }
+
+    .text-container .main-title {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 56px;
+        font-family: var(--font_type);
+        margin-bottom: 10px;
+        color: #010659;
+    }
+
+    .text-l-description {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: var(--font_type);
+        color: #000000;
+        line-height: 56px;
+        width: 85vw;
+
+    }
+}
+
+@media (max-width: 992px) and (min-width: 992px) {
+    .owner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .owner-image {
+        width: 100%;
+        max-width: 370px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: block;
+
+    }
+
+    .l-shape {
+        position: relative;
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+        max-width: 520px;
+        background: url('/img/chairman card.png') center center no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-wrapper {
+        text-align: center;
+    }
+
+    .text-container {
+        position: static;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .text-container .main-title {
+        font-size: 28px;
+    }
+
+    .text-l-shep,
+    .text-l-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+
+}
+
+@media (max-width: 991px) and (min-width: 900px) {
+    .owner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .owner-image {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+
+
+    }
+
+    .l-shape {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -31px;
+        padding: 20px;
+        width: 100%;
+        max-width: 720px;
+        background: url('/img/chairman card.png') center center no-repeat;
+        background-size: cover;
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        align-items: start;
+
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+
+    .text-wrapper {
+        text-align: center;
+    }
+
+    .text-container {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .text-container .main-title {
+        font-size: 28px;
+    }
+
+    .text-l-shep,
+    .text-l-description {
+        font-size: 18px;
+        text-align: left;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+    .owner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .owner-image {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+
+
+    }
+
+    .l-shape {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -31px;
+        padding: 20px;
+        width: 100%;
+        max-width: 720px;
+        background: url('/img/chairman card.png') center center no-repeat;
+        background-size: cover;
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        align-items: start;
+
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+
+    .text-wrapper {
+        text-align: center;
+    }
+
+    .text-container {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .text-container .main-title {
+        font-size: 28px;
+    }
+
+    .text-l-shep,
+    .text-l-description {
+        font-size: 18px;
+        text-align: left;
+        line-height: 28px;
+    }
+
+    .owner-desc {
+        color: black;
+        font-size: 24px;
+        font-weight: 300;
+        font-family: var(--font_type);
+
+    }
+
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+    .owner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .owner-image {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+
+
+    }
+
+    .l-shape {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -31px;
+        padding: 20px;
+        width: 100%;
+        max-width: 720px;
+        background: url('/img/chairman card.png') center center no-repeat;
+        background-size: cover;
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        align-items: start;
+        width: 10px;
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+
+    .text-wrapper {
+        text-align: center;
+    }
+
+    .text-container {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .text-container .main-title {
+        font-size: 28px;
+    }
+
+    .text-l-shep {
+        font-size: 18px;
+        text-align: left;
+        line-height: 28px;
+    }
+
+    .owner-desc {
+        color: black;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: var(--font_type);
+
+    }
+
+}
+
+
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+    .custom-card .card-title {
+        font-weight: 700;
+        font-family: var(--font_type);
+        font-size: 22px;
+        color: #FFFFFF;
+        line-height: 30px;
+    }
+
+    .card-text {
+        text-align: left;
+        color: #FFFFFF;
+        font-weight: 300;
+        font-family: var(--font_type);
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 1000px) and (min-width: 900px) {
+    .custom-card .card-title {
+        font-weight: 700;
+        font-family: var(--font_type);
+        font-size: 22px;
+        color: #FFFFFF;
+        line-height: 30px;
+    }
+
+    .card-text {
+        text-align: left;
+        color: #FFFFFF;
+        font-weight: 300;
+        font-family: var(--font_type);
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 900px) and (min-width: 700px) {
+    .custom-card .card-title {
+        font-weight: 700;
+        font-family: var(--font_type);
+        font-size: 20px;
+        color: #FFFFFF;
+        line-height: 40px;
+    }
+
+    .card-text {
+        text-align: left;
+        color: #FFFFFF;
+        font-weight: 300;
+        font-family: var(--font_type);
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .custom-card .card-title {
+        font-weight: 700;
+        font-family: var(--font_type);
+        font-size: 20px;
+        color: #FFFFFF;
+        line-height: 40px;
+    }
+
+    .card-text {
+        text-align: left;
+        color: #FFFFFF;
+        font-weight: 300;
+        font-family: var(--font_type);
+        line-height: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 500px) {
+    .owner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .owner-image {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .l-shape {
+        position: relative;
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+        background: url('/img/chairman card.png') center center no-repeat;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .owner-desc {
+        color: black;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: var(--font_type);
+
+    }
+
+    .text-wrapper {
+        text-align: center;
+    }
+
+    .text-container {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .text-container .main-title {
+        font-size: 28px;
+    }
+
+    .text-l-shep {
+        font-size: 14px;
+        line-height: 23px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+    .owner-title {
+        color: #000000;
+        font-size: 38px;
+        font-weight: 700;
+        font-family: var(--font_type);
+        text-align: center !important;
+    }
+
+    .owner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .owner-image {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .l-shape {
+
+        position: relative;
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+        max-width: 380px;
+
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .owner-desc {
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: var(--font_type);
+
+    }
+
+    .text-wrapper {
+        text-align: center;
+    }
+
+    .text-container {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .text-container .main-title {
+        font-size: 17px;
+    }
+
+    .text-l-shep {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .text-l-description {
+
+        font-size: 18px;
+        font-weight: 300;
+        font-family: var(--font_type);
+        color: #000000;
+        line-height: 40px;
+        width: 75vw;
+        text-align: center;
+
+    }
+}

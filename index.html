@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>GlobalMesh</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="GlobalMesh" name="keywords" />
+    <meta content="GlobalMesh" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-grow text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white">
+      <div class="container mt-0">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+          <a href="index.html" class="navbar-brand">
+            <img src="img/logo.png" alt="logo-Bg" style="height: 40px" />
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler ms-auto me-0 bg-danger"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link active">HOME</a>
+              <a href="about.html" class="nav-item nav-link">ABOUT</a>
+              <a href="service.html" class="nav-item nav-link">SERVICES</a>
+              <a href="portfolio.html" class="nav-item nav-link">PORTFOLIO</a>
+              <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+            </div>
+            <button
+              class="btn nav-btn p-0 d-none d-lg-block"
+              id="#talking-section"
+            >
+              <a href="contact.html#talking-section">Talk to us</a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div
+      id="heroCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div
+            class="container-fluid pt-5 hero-header mb-0"
+            style="
+              background: url('img/homebg-1.webp') center center no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="container pt-5">
+              <div class="row g-6 hero-raw">
+                <div class="col-lg-9 text-lg-start mb-lg-5">
+                  <h1 class="text-hero mb-4 animated slideInRight">
+                    We are the forefront of media Innovation in Sri Lanka
+                  </h1>
+                  <button class="btn btn-call-us" onclick="callUs()">
+                    Call Us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="carousel-item"
+          style="
+            background: url('img/homebg-2.webp') center center no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="container-fluid pt-5 hero-header mb-0">
+            <div class="container pt-5">
+              <div class="row g-6 hero-raw">
+                <div class="col-lg-9 text-lg-start mb-lg-5">
+                  <h1 class="text-hero mb-4 animated slideInRight">
+                    Empowering Brands Through Next-Gen Media Solutions
+                  </h1>
+                  <button class="btn btn-call-us" onclick="callUs()">
+                    Call Us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="carousel-item"
+          style="
+            background: url('img/homebg-3.webp') center center no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="container-fluid pt-5 hero-header mb-0">
+            <div class="container pt-5">
+              <div class="row g-6 hero-raw">
+                <div class="col-lg-9 text-lg-start mb-lg-5">
+                  <h1 class="text-hero mb-4 animated slideInRight">
+                    Transforming Ideas Into Powerful Media Experiences
+                  </h1>
+                  <button class="btn btn-call-us" onclick="callUs()">
+                    Call Us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional controls -->
+      <!--        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">-->
+      <!--            <span class="carousel-control-prev-icon"></span>-->
+      <!--        </button>-->
+      <!--        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">-->
+      <!--            <span class="carousel-control-next-icon"></span>-->
+      <!--        </button>-->
+    </div>
+
+    <!-- Hero End -->
+    <!-- Clients Section Start -->
+    <div class="container-fluid py-2 logo-slider-company">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Title on the Left -->
+          <div class="col-lg-4 text-lg-start text-center">
+            <h2 class="mb-0 home-title-text">Our Trusted Clients</h2>
+          </div>
+
+          <!-- Logo Slider on the Right -->
+          <div class="col-lg-8">
+            <div class="logo-slider logo-company-slider">
+              <div class="logo-slider-item cargils">
+                <img
+                  src="img/cargills-radio-removebg-preview.png"
+                  class="img-fluid"
+                  alt="Client 1"
+                />
+              </div>
+              <div class="logo-slider-item swarna">
+                <img src="img/srnatv.webp" class="img-fluid" alt="Client 2" />
+              </div>
+              <div class="logo-slider-item kfc">
+                <img src="img/kfc.webp" class="img-fluid" alt="Client 3" />
+              </div>
+              <!-- <div><img src="img/sirsa.webp" class="img-fluid" alt="Client 4"></div> -->
+              <!-- <div><img src="img/sirsa.webp" class="img-fluid" alt="Client 4"></div> -->
+
+              <div class="logo-slider-item cargils">
+                <img
+                  src="img/cargills-radio-removebg-preview.png"
+                  class="img-fluid"
+                  alt="Client 1"
+                />
+              </div>
+              <div class="logo-slider-item swarna">
+                <img src="img/srnatv.webp" class="img-fluid" alt="Client 2" />
+              </div>
+              <div class="logo-slider-item kfc">
+                <img src="img/kfc.webp" class="img-fluid" alt="Client 3" />
+              </div>
+              <!-- <div><img src="img/sirsa.webp" class="img-fluid" alt="Client 4"></div> -->
+              <!-- <div><img src="img/sirsa.webp" class="img-fluid" alt="Client 4"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Clients Section End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5 mb-4">
+      <div class="container py-0">
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <h1 class="mb-4 home-title-text">Our Services</h1>
+        </div>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeIn"
+            data-wow-delay="0.3s"
+          >
+            <div
+              class="case-item position-relative overflow-hidden rounded mb-2"
+            >
+              <img
+                class="img-fluid"
+                src="img/internalradiooperator.webp"
+                alt=""
+              />
+              <a class="our-services-text case-overlay blue-card-mask" href="#">
+                <h5 class="text-service-card">Internal Radio Operators</h5>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <div
+              class="case-item position-relative overflow-hidden rounded mb-2"
+            >
+              <img
+                class="img-fluid"
+                src="img/filmpostproductionservice.webp"
+                alt=""
+              />
+              <a class="our-services-text case-overlay red-card-mask" href="#">
+                <h5 class="text-service-card">Film Post Production Service</h5>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeIn"
+            data-wow-delay="0.3s"
+          >
+            <div
+              class="case-item position-relative overflow-hidden rounded mb-2"
+            >
+              <img class="img-fluid" src="img/Movie%20Exhibitors.jpg" alt="" />
+              <a class="our-services-text case-overlay blue-card-mask" href="#">
+                <h5 class="text-service-card">
+                  Movie Exhibitors<br />
+                  Operations
+                </h5>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <div
+              class="case-item position-relative overflow-hidden rounded mb-2"
+            >
+              <img class="img-fluid" src="img/showzsapp.webp" alt="" />
+              <a class="our-services-text case-overlay red-card-mask" href="#">
+                <h5 class="text-service-card">SHOWZS App</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Case End -->
+
+    <!-- Our Voice Start -->
+    <div class="container-fluid studio-header">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <div
+          class="row studio-header-raw d-flex flex-column align-items-center text-center"
+        >
+          <div class="col-12 radio-content">
+            <h1 class="mb-5 animated slideInRight studio-hero-title">
+              Voice Recording and Dubbing Studio
+            </h1>
+            <p class="py-0 text-radio mx-3">
+              Voice Recording and Dubbing Studio is designed for high-quality
+              audio production to deliver
+              <br />
+              customer requirements. We do voice recording, movie dubbing,
+              stereo and mono
+              <br />
+              editing with quality sound effects.
+            </p>
+            <button
+              class="btn btn-book-now animated slideInRight"
+              onclick="openWhatsApp()"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Editing Start -->
+    <div class="container-fluid video-edit-header py-4">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center"
+      >
+        <div
+          class="row video-edit-header-raw d-flex flex-column align-items-center text-center"
+        >
+          <div class="col-12 video-edit-content">
+            <h1 class="mb-5 animated slideInRight text-hero">Video Editing</h1>
+            <p class="text-radio mx-3">
+              Our video editing services go above and beyond. We can come up
+              with new
+              <br />
+              creative ideas, bring new perspectives to the table, all while
+              making sure your <br />
+              requirements are met.
+            </p>
+
+            <button
+              class="btn btn-book-now-blue animated slideInRight"
+              onclick="openWhatsApp()"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Start
+    <div class="container-fluid pt-5 py-5 cinema-bg">
+        <div class="container pt-5">
+            <div class="row g-6 justify-content-lg-start">
+                <div class="col-12 col-lg-8 d-flex flex-column  align-items-lg-start  text-lg-start mb-lg-5">
+                    <h1 class="Legacy-text mb-4 animated slideInRight">Cinema Legacy</h1>
+                    <p class="fs-0 text-radio">
+                        Since 1983, Nishantha Pradeep has managed and modernized New Janaki Cinema,
+                        transforming it into a premier entertainment venue equipped with advanced projection
+                        and sound systems. Building on this legacy, he established City Cinema, a
+                        state-of-the-art 3D mini cinema, in 2015, offering an immersive cinematic
+                        experience with cutting-edge technology and superior comfort for moviegoers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--    &lt;!&ndash; Newsletter End &ndash;&gt;-->
+    <div
+      class="container-fluid bg-white d-flex justify-content-center align-items-center py-5"
+    >
+      <div class="d-flex flex-column flex-sm-row align-items-center gap-3">
+        <h1 class="text-contact-wts mb-0">Contact us via WhatsApp</h1>
+        <button
+          class="btn btn-dark-wts animated slideInRight"
+          onclick="openWhatsApp()"
+        >
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+      <div class="container py-5">
+        <div class="row g-5 justify-content-between align-items-start">
+          <!-- Left: Footer Logo -->
+          <div class="col-md-3 text-md-start text-center">
+            <a href="index.html">
+              <img src="img/footerlogo" alt="logo-Bg" class="img-fluid" />
+            </a>
+          </div>
+
+          <!-- Center: Get In Touch -->
+          <div class="col-md-5 text-lg-start">
+            <h5 class="text-white mb-4">Get In Touch</h5>
+            <p class="f-detail">
+              <i class="fa fa-map-marker-alt me-2"></i> Global Mesh Solutions
+              (Pvt) Ltd.
+            </p>
+            <p class="f-detail">
+              No.7B Floor 25 ½, Ocean Tower Building,<br />
+              Station Road, Bambalapitiya.
+            </p>
+            <p class="f-detail">
+              <i class="fa fa-globe me-2"></i> www.globalmeshsolutions.com
+            </p>
+            <p class="f-detail">
+              <i class="fa fa-envelope me-2"></i> info@globalmeshsolutions.com
+            </p>
+            <!--                    <div class="d-flex justify-content-center pt-2">-->
+            <!--                        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-twitter"></i></a>-->
+            <!--                        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-facebook-f"></i></a>-->
+            <!--                        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-youtube"></i></a>-->
+            <!--                        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-instagram"></i></a>-->
+            <!--                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>-->
+            <!--                    </div>-->
+          </div>
+
+          <!-- Right: Popular Links -->
+          <div class="col-md-3 text-md-end text-start">
+            <h5 class="text-white mb-4 text-start">Popular Links</h5>
+            <a class="btn btn-link d-block" href="about.html">About</a>
+            <a class="btn btn-link d-block" href="service.html">Services</a>
+            <a class="btn btn-link d-block" href="portfolio.html">Portfolio</a>
+            <a class="btn btn-link d-block" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="container">
+        <div class="copyright text-center text-md-start">
+          <div class="row">
+            <div class="col-md-6">
+              &copy;
+              <a class="border-bottom f-detail" href="#"
+                >2007–2025 Global Mesh (Pvt) Ltd.</a
+              >
+              All Rights Reserved. Designed By
+              <a class="border-bottom" href="https://intrixdigital.com/"
+                >Intrix Digital</a
+              >
+            </div>
+            <div class="col-md-6 text-md-end">
+              <div class="footer-menu">
+                <a href="#">Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".logo-slider").slick({
+          slidesToShow: 3, // Number of logos visible at a time
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000, // Speed of sliding
+          arrows: false, // Hide next/prev arrows
+          dots: false, // Hide dots navigation
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: { slidesToShow: 3 },
+            },
+            {
+              breakpoint: 768,
+              settings: { slidesToShow: 2 },
+            },
+            {
+              breakpoint: 576,
+              settings: { slidesToShow: 1 },
+            },
+          ],
+        });
+      });
+    </script>
+    <script>
+      function openWhatsApp() {
+        window.open("https://wa.me/+94765299400", "_blank");
+      }
+    </script>
+    <script>
+      function callUs() {
+        window.location.href = "tel:+94765299400";
+      }
+    </script>
+  </body>
+</html>
